@@ -6,7 +6,11 @@ public enum EmBusinessError {
     NO_OBJECT_FOUND(10001,"request object doesn't exit"),
     UNKNOWN_ERROR(10002,"unknown error"),
     NO_HANDLER_FOUND(10003,"no handler found"),
-    BIND_EXCEPTION_ERROR(10004,"bind exception error"),;
+    BIND_EXCEPTION_ERROR(10004,"bind exception error"),
+    PARAMETER_VALIDATION_ERROR(10005,"fail to validate request parameter"),
+
+    // user service error type begin at 20000
+    REGISTER_DUP_FAIL(20001,"user existed"),;
 
     private Integer errCode;
 
