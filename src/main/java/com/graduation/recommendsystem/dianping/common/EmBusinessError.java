@@ -11,7 +11,10 @@ public enum EmBusinessError {
 
     // user service error type begin at 20000
     REGISTER_DUP_FAIL(20001,"user existed"),
-    LOGIN_FAIL(20002,"Phone number or Password error"),;
+    LOGIN_FAIL(20002,"Phone number or Password error"),
+
+    // admin error
+    ADMIN_SHOULD_LOGIN(30001,"admin should login first"),;
 
     private Integer errCode;
 
