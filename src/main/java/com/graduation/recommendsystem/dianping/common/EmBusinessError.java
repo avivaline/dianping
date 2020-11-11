@@ -10,7 +10,8 @@ public enum EmBusinessError {
     PARAMETER_VALIDATION_ERROR(10005,"fail to validate request parameter"),
 
     // user service error type begin at 20000
-    REGISTER_DUP_FAIL(20001,"user existed"),;
+    REGISTER_DUP_FAIL(20001,"user existed"),
+    LOGIN_FAIL(20002,"Phone number or Password error"),;
 
     private Integer errCode;
 
