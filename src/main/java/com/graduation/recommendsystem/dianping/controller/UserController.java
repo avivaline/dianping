@@ -84,16 +84,16 @@ public class UserController {
         return CommonRes.create(userModel);
     }
 
-    @RequestMapping("/loginout")
+    @RequestMapping("/logout")
     @ResponseBody
-    public CommonRes loginout() throws BusinessException, UnsupportedEncodingException, NoSuchAlgorithmException {
+    public CommonRes logout() throws BusinessException, UnsupportedEncodingException, NoSuchAlgorithmException {
 
         httpServletRequest.getSession().invalidate();
         return CommonRes.create(null);
     }
 
     //get current user details
-    @RequestMapping("/getCurrentUser")
+    @RequestMapping("/getcurrentuser")
     @ResponseBody
     public CommonRes getCurrentUser() {
         UserModel userModel = (UserModel) httpServletRequest.getSession().getAttribute(CURRENT_USER_SESSION);
